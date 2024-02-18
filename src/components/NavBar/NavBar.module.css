@@ -12,8 +12,8 @@
     font-size: 1.2rem;
     justify-content: center;
     align-items: center;
-    transition: width 0.2s ease-out;
-    border: 1px solid black
+    transition: width 0.3s ease-out;
+    position: relative;
 }
 
 .navBar a:nth-child(2) {
@@ -43,6 +43,7 @@
 
 .navBar .active {
     width: calc(100% - 186px);
+    cursor: default;
 }
 
 .active span,
@@ -52,4 +53,28 @@
 
 .navBar .active .content {
     display: block;
+}
+
+.logo svg {
+    transition: all 0.3s ease;
+}
+
+.logo {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.navBar a .logo svg {
+    height: 45px;
+}
+
+.navBar .active .logo {
+    margin-left: 55px;
+}
+
+.navBar .active .logo svg {
+    height: 60px;
 }
