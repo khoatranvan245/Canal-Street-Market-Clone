@@ -1,0 +1,55 @@
+.navBar {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Apercu Mono Pro', sans-serif;
+}
+
+.navBar a {
+    color: black;
+    width: 62px;
+    display: flex;
+    height: 100vh;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    transition: width 0.2s ease-out;
+    border: 1px solid black
+}
+
+.navBar a:nth-child(2) {
+    background-color: var(--blue);
+}
+
+.navBar a:nth-child(3) {
+    background-color: var(--red);
+}
+
+.navBar a:nth-child(4) {
+    background-color: var(--yellow);
+}
+
+.navBar a p {
+    position: absolute;
+    top: 75px;
+}
+
+.navBar a span {
+    transform: rotate(90deg);
+}
+
+.navBar a .content {
+    display: none;
+}
+
+.navBar .active {
+    width: calc(100% - 186px);
+}
+
+.active span,
+.active p {
+    display: none;
+}
+
+.navBar .active .content {
+    display: block;
+}

@@ -1,0 +1,9 @@
+:root {
+    --yellow: #ffb400;
+    --blue: #5ea3ec;
+    --red: #f64444;
+}
+
+a {
+    text-decoration: none;
+}
